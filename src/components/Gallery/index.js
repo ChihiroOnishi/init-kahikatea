@@ -6,10 +6,9 @@ import { GalleryWrap, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask, Vide
 import Video from './video';
 import { pictures } from './Data';
 
-export default function Gallery(props) {
-    const images = props.data;
+export default function Gallery() {
     const columns = Array.from(Array(4).keys());
-    const numberOfRow = Math.ceil(images.length / columns.length);
+    const numberOfRow = Math.ceil(pictures.length / columns.length);
     const rows = Array.from({length: numberOfRow}, (_, i) => i + 1);
     let nextNumber = 0;
 

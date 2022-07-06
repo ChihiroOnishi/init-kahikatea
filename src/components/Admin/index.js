@@ -7,8 +7,6 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card'
 import { FormContainer, UploadForm, FormButton, FormH1, FormFile, FormLabel, FormTextarea, Icon, Text, FormPreviewImg } from './AdminElements';
-import { API, graphqlOperation } from 'aws-amplify';
-import { cloudinarysignature } from '../../graphql/queries';
 
 const Admin = () => {
     const [activeTab, setActiveTab] = useState('story');
@@ -53,39 +51,7 @@ const Admin = () => {
     //         console.error(err);
     //         setErrMsg('Something went wrong!');
     //     }
-    // };
-
-    const uploadWidget = window.cloudinary.createUploadWidget({
-        cloudName: 'kahikatea', 
-        uploadPreset: 'kahikatea_video'}, (error, result) => { 
-            if (!error && result && result.event === "success") { 
-                console.log('Done! Here is the image info: ', result.info); 
-            }
-        }
-    );
-
-    const addVideo = () => {
-        uploadWidget.open();
-    };
-
-    // eslint-disable-next-line no-unused-vars
-    async function fetchCloudinarySignature(cb, params) {
-        try {
-        const cSign = await API.graphql(graphqlOperation(cloudinarysignature, { msg: JSON.stringify(params) }));
-        const data = JSON.parse(cSign.data.cloudinarysignature);
-        console.log(`Uploading using key ${data.body}`);
-        return data.body;
-        } catch (err) {
-        console.log("error fetching signature");
-        }
-    }
-    
-    // Then update showWidget to call this post before opening our dialog. You could put this anywhere but I thought this would be easy.
-    const showWidget = () => {
-        fetchCloudinarySignature();
-        uploadWidget.open();
-    }
-    
+    // };   
 
     return (
         <>
@@ -101,7 +67,7 @@ const Admin = () => {
                         <Tab eventKey="photo" title="Gallery Photo">
                         </Tab>
                         <Tab eventKey="video" title="Gallery Video">
-                            <button onClick={addVideo}>Create Video</button>
+                            <button>Create Video</button>
                         </Tab>
                     </Tabs>
                     </Container>
