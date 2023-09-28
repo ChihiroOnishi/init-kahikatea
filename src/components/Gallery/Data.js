@@ -18,58 +18,54 @@ export const pictures = [
     {
         id: 0,
         src: pic0,
-        text: 'test',
+        text: '0',
     },
     {
         id: 1,
         src: pic1,
-        text: '',
-    },
-    {
-        id: 2,
-        src: pic2,
-        text: '',
-    },
-    {
-        id: 3,
-        src: pic3,
-        text: '',
-    },
-    {
-        id: 4,
-        src: pic4,
-        text: '',
+        text: '1',
     },
     {
         id: 5,
         src: pic5,
-        text: '',
+        text: '5',
     },
     {
         id: 6,
         src: pic6,
-        text: '',
+        text: '6',
+    },
+    {
+        id: 2,
+        src: pic2,
+        text: '2',
+    },
+    {
+        id: 3,
+        src: pic3,
+        text: '3',
+    },
+    {
+        id: 4,
+        src: pic4,
+        text: '4',
     },
     {
         id: 7,
         src: pic7,
-        text: '',
-    },
-    {
-        id: 8,
-        src: pic8,
-        text: '',
+        text: '7',
     },
     {
         id: 9,
         src: pic9,
-        text: '',
+        text: '9',
     },
     {
         id: 10,
         src: pic10,
-        text: '',
+        text: '10',
     },
+// HEADER: Memorial services held at the Toyama College of Foreign Languages
 ];
 
 export const videos = [

@@ -125,7 +125,7 @@ export const homeObjEight = {
     lightTextDesc: false,
     topLine: "",
     headline: "",
-    description: "The KAHIKATEA Memorial Sculpture was visited in 2022 by Ambassador Ito Japan and David Bolam-Smith. Dean of the Christchurch Transitional Cathedral Lawrence Kimberley said a prayer in front of the KAHIKATEA Memorial Sculpture for the 28 Japanese students who died in the CTV building at the time of the Christchurch Earthquake 2011.",
+    description: "The KAHIKATEA Memorial Sculpture was visited in 2022 by Ambassador Ito Japan (left) and David Bolam-Smith (right). Dean of the Christchurch Transitional Cathedral Lawrence Kimberley said a prayer in front of the KAHIKATEA Memorial Sculpture for the 28 Japanese students and all others who died in the Christchurch Earthquake 2011.",
     imgStart: true,
     img: img_8,
     alt: "dreaming",
