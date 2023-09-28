@@ -69,7 +69,9 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
     font-family: 'Noto Sans JP', sans-serif;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
     white-space: pre-line;

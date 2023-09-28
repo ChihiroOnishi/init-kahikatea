@@ -39,7 +39,8 @@ export const AboutH2 = styled.h2`
 export const AboutP = styled.p`
     max-width: 600px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     padding: 0 15px;
 `
